@@ -1,3 +1,4 @@
+import React from "react";
 import TaskWrapperBody from "./TaskWrapperBody";
 import TaskWrapperHeader from "./TaskWrapperHeader";
 
@@ -15,13 +16,14 @@ export type TasksWrapperProps = {
   tasksList: Task[];
 };
 
-const TasksWrapper = ({ tasksList, title }: TasksWrapperProps) => {
+const TasksWrapperComponent = ({ tasksList, title }: TasksWrapperProps) => {
   return (
-    <div className="flex flex-col gap-5">
+    <div className='flex flex-col gap-5'>
       <TaskWrapperHeader title={title} tasksList={tasksList} />
       <TaskWrapperBody title={title} tasksList={tasksList} />
     </div>
   );
 };
 
+export const TasksWrapper = React.memo(TasksWrapperComponent);
 export default TasksWrapper;
