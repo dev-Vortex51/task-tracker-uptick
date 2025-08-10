@@ -5,7 +5,7 @@ import CreateForm from "./CreateForm";
 import { useState } from "react";
 
 const AppHeader = () => {
-  const [isOpenModal, setIsOpenModal] = useState(false);
+  const [isOpenModal, setIsOpenModal] = useState<boolean>(false);
   return (
     <div className="flex items-center justify-between">
       <Logo />
