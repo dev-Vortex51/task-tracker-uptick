@@ -1,7 +1,10 @@
+import { useDispatch } from "react-redux";
 import TaskCard from "./TaskCard";
 import type { TasksWrapperProps } from "./TasksWrapper";
+import { deleteTask } from "../store/slices/taskSlice";
 
 const TaskWrapperBody = ({ tasksList, title }: TasksWrapperProps) => {
+  const dispatch = useDispatch();
   let bgClass = "";
 
   switch (title) {
@@ -31,6 +34,7 @@ const TaskWrapperBody = ({ tasksList, title }: TasksWrapperProps) => {
             description={task.description}
             dueDate={task.dueDate}
             tag={task.tag}
+            onDelete={() => dispatch(deleteTask(task.id))}
           />
         ))
       ) : (

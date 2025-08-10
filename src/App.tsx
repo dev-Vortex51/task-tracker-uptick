@@ -15,7 +15,7 @@ function App() {
     <div className="flex items-center justify-center py-10 ">
       <div className=" w-[95%] p-4 sm:max-w-6xl md:max-w-7xl mx-auto flex flex-col gap-10">
         <AppHeader />
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
           <TasksWrapper title="To Do" tasksList={todoTask} />
           <TasksWrapper title="In Progress" tasksList={progressTask} />
           <TasksWrapper title="Done" tasksList={doneTask} />
