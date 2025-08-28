@@ -30,11 +30,13 @@ const TaskWrapperBody = ({ tasksList, title }: TasksWrapperProps) => {
         tasksList.map((task) => (
           <TaskCard
             key={task.id}
+            id={task.id}
             name={task.name}
             description={task.description}
             dueDate={task.dueDate}
             tag={task.tag}
             onDelete={() => dispatch(deleteTask(task.id))}
+            onEdit={() => {}}
           />
         ))
       ) : (
