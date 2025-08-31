@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --color-progress-fill: #feefeb;
+  --color-progress-number: #f15a2e;
+  --color-progress-border: #fbcec1;
+
+  --color-text-black: #212126;
+
+  --color-done-fill: #e6fcf8;
+  --color-done-number: #00dcb4;
+  --color-done-border: #b3f5e9;
+
+  --color-todo-fill: #fbcec1;
+  --color-todo-number: #ee2f80;
+  --color-todo-border: #fac1d9;
+
+  --color-priority-high: #000b30;
+  --color-priority-low: #e5e7ea;
+  --color-priority-mid: #808598;
+
+  --color-confirm: #666d83;
+  --color-cancel: #ccced6;
+
+  --color-input-stroke: #ccced6;
+
+  --color-accent: #000b30;
+  --font-aventa: "Aventa Personal Use Only", sans-serif;
+}
+
+html,
+body {
+  font-family: "Overpass", sans-serif;
+}
